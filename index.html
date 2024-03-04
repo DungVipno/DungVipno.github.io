@@ -5,19 +5,21 @@
         <meta name = "viewport" content = "width=device-width">
         <title>My first page</title>
         <style>
-            header{
+            header:nth-child(1n){
+                border:  outset 4px #b05f5f;
+                border-radius: 1em;
+                padding: 1px;
                 background-image: url(https://th.bing.com/th/id/OIP.D8ev0VY-7FxS1hBpm9bokwHaE3?w=285&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7);
-                text-align: center;
                 opacity: 0.9;
+                text-align: center;
             }
         h1{
-            
             color:#000000; 
             font-family: Arial;
             font-size: none;
         }
         p{
-            color:#2bff00; 
+            color:#f4ff58; 
             font-variant: small-cap;
              text-align: center; 
              line-height: 60%; 
@@ -25,32 +27,52 @@
              font-size: none;
         }
         ol{
+            padding: 1em 1em 3em 2em;
             color:#0000ff; 
             background: linear-gradient(#ffefdc 0%,#fbbcbc 100%); 
             font-size: none;
             width: 90%;
             border-radius: 3%;
         }
-            li {
+            li{
+                transform-origin: 100%;
                 list-style-type: upper-roman;
-                text-align: left;
-                background-color: #ffa7a7;
+                text-align: center;
+                background-color: #d57777;
+                transition-duration: .5s;
+                transition-delay: 0s;
+                
+            }
+            li:hover{                
+                list-style-type: upper-roman;
+                background-color: #d57777;
+                border-radius: 40%;
+            }
+            li:active {
+                transition-duration: .2s;
+                background-color: red;
+                list-style-type: upper-roman;
             }
             img{
-                width: 20%;
+                
+                width: 8em;
             }
         a{
             text-decoration: underline;
-            float: left;
+            text-align: center;
+            border: outset ;
+            transition-duration: .8s;
         }
         a:hover{
+            border: inset;
             background: palegreen;
         }
         a:focus{
             background: burlywood;
         }
-        a[href$ = ".vn"]{
+        a[href = ".jpg"]{
             color: red;
+            
         }
 
 
@@ -58,7 +80,7 @@
             display: flex;
             flex-wrap: wrap-reverse ;
         }
-        div{     
+        div{   
             display: inline-block;
             width: 100%;
         }
@@ -66,13 +88,14 @@
         display: flex
         }
         .topic {
+            border: 3px ridge #ffa7a7;
             flex-grow: 1;
             text-align:center;
             
         }
         .content{
             text-align: left;
-        color: black;
+            color: black;
         }
         
         </style>
@@ -80,7 +103,7 @@
     <body>
         <hr>
         <header>
-        <h1>trying to create a website for movies things</h1>    
+        <h1>TRYING TO MAKE A WEBSITE FOR MOVIES THINGS</h1>    
         <p>Movies list</p>
         </header> 
         <hr>
@@ -92,10 +115,10 @@
                         <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/3/36/Mai_2024_poster.jpg/330px-Mai_2024_poster.jpg" alt="Mai" >
                         <div class = "topic">
                             about Mai
+                        
                             <div class = "content">
                                 "Mai" xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai (do Phương Anh Đào thủ vai) có số phận rất đặc biệt. Bởi làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn soi mói, phán xét từ những người xung quanh. Và rồi Mai gặp Dương (Tuấn Trần) - chàng trai đào hoa lãng tử. Những tưởng bản thân không còn thiết tha yêu đương và mưu cầu hạnh phúc cho riêng mình thì khao khát được sống một cuộc đời mới trong Mai trỗi dậy khi Dương tấn công cô không khoan nhượng. Họ cho mình những khoảnh khắc tự do, say đắm và tràn đầy tiếng cười. Liệu cặp đôi ấy có nắm giữ được niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay nghiệt, bất công? "Mai" - một câu chuyện tâm lý, tình cảm pha lẫn nhiều tràng cười vui 
                             </div>
-                            
                         </div>
                     </div>
                 
